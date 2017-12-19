@@ -1,0 +1,742 @@
+body{
+  position: relative;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 17px;
+  background-image: url("/img/background.jpg");
+  background-position: center center fixed;
+  background-repeat: repeat;
+  background-size: 110%;
+}
+
+.logo{
+  width: 75px;
+  position: absolute;
+  top: 20px;
+  left:40px;
+}
+
+h1{
+  color: white;
+  position: absolute;
+  font-size: 2em;
+  display: block;
+  width: 100%;
+  text-align: center;
+  top:125px;
+}
+
+.achtergrond{
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lijn{
+  position: fixed;
+  bottom:0px;
+  width: 100%;
+  height:5px;
+  background-color: rgb(252,220,4);
+}
+
+input::-webkit-input-placeholder {
+  color: white !important;
+}
+
+input{
+  font-size: 0.9em;
+  color: white;
+}
+
+/*AANMELDEN VIEW*/
+
+.aanmelden-titel{
+  margin-top: 40px;
+}
+
+.aanmelden-aanmelden{
+  background-color: rgba(252,220,4,0.2);
+  padding: 15px 40px;
+  border-bottom: 3px solid rgb(252,220,4);
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 -100px 0 0;
+}
+
+.aanmelden{
+  position: absolute;
+  top: 250px;
+  width: 375px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.registreren{
+  position: absolute;
+  top: 200px;
+  width: 375px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.registreren-titel{
+  margin-top: 10px;
+}
+
+.registreren-account{
+  background-color: rgba(252,220,4,0.2);
+  padding: 15px 40px;
+  border-bottom: 3px solid rgb(252,220,4);
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+input[type="text"], input[type="password"], input[type="email"]{
+  background-color:  rgba(220,220,220,0.2);
+  padding: 20px;
+  margin:0 0 10px 0;
+  width: 210px;
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 3px solid white;
+}
+
+a{
+  color: grey;
+}
+
+a .aanmelden-vergeten{
+  display: block;
+  width: 250px;
+  text-align: right;
+  margin: 3px auto 10px;
+}
+
+.opstartscherm-aanmelden, .opstartscherm-registreren{
+  background-color: rgba(252,220,4,0.2);
+  padding: 20px 70px;
+  border-bottom: 3px solid rgb(252,220,4);
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.opstartscherm{
+  margin: 190px auto 0;
+  width: 211px;
+  position: relative;
+  z-index: 1000;
+}
+
+.opstartscherm-logo{
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.opstartscherm-aanmelden{
+  margin-bottom: 20px;
+}
+
+.opstartscherm-overslaan{
+  background-color: rgb(30,30,30);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  margin: 50px 0 0 0;
+  float: right;
+}
+
+/*HOME VIEW*/
+
+.home img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.home{
+  position: absolute;
+  top: 200px;
+  width: 315px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home .btn{
+  background: linear-gradient(to top, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+  width: 150px;
+  height: 150px;
+  margin: 4px 2px;
+  display: inline-block;
+  border-radius: 3px;
+  border-bottom: 2pt solid #FFFF00;
+  box-shadow: 4px 4px 39px 0px rgba(0,0,0,0.5);
+  transition-duration: 0.3s;
+}
+
+.home .btn:hover{
+  opacity: 0.7;
+}
+
+.home .btn img{
+  width: 40%;
+  margin: 30px auto 0;
+  display: block;
+}
+
+.home a{
+  color: white;
+  text-decoration: none;
+}
+
+.home .btn p{
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.6pt;
+  font-size: 0.9em;
+}
+
+/*ROUTE VIEW*/
+
+.routeP{
+  position: absolute;
+  top: 200px;
+  width: 275px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.routeLabel{
+  position: absolute
+  color: black;
+  margin-right: 5px;
+  font-size: 1.1em;
+}
+
+.routeP .van, .naar{
+  background: white;
+  padding: 14px 30px;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.routeP .bestemming{
+  margin-left: -10px;
+}
+
+.routeP .datum{
+  font-size: 1.1em;
+  color: white;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 40px;
+  padding: 15px 0px;
+}
+
+.routeP .wanneer{
+  position: relative;
+}
+
+.routeP input[type="date"]{
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  color: rgba(255, 255, 255, 0.4);
+  border: none;
+  font-size: 0.8em;
+  border-bottom: 3px solid white;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+  padding: 14px 0px;
+  padding-left: 10px;
+  width: 100px;
+}
+
+.routeP input[type="time"]{
+  display: inline-block;
+  position: absolute;
+  top:60px;
+  right: 0;
+  color: rgba(255, 255, 255, 0.4);
+  border: none;
+  font-size: 0.8em;
+  border-bottom: 3px solid white;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+  padding: 14px 0px;
+  padding-left: 10px;
+  width: 100px;
+}
+
+.routeP input[type="text"]{
+  position: absolute;
+  right: 30px;
+  vertical-align: center;
+  border: none;
+  font-size: 1em;
+  padding: 4px;
+  background: none;
+  color: grey;
+  width: 175px;
+  margin-top: -4px;
+}
+
+.routePlannen{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 450px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 1.2em;
+  background: rgba(240,239,53,0.2);
+  border: none;
+  border-bottom: 3px solid rgb(240,239,53);
+  border-radius: 3px;
+  width: 275px;
+}
+
+.routeTijden{
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  border: none;
+  width: 180px;
+}
+
+.routeT{
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  text-align: center;
+}
+
+.routeT .vroegere, .latere{
+  border-bottom: 3px solid rgb(240,239,53);
+  background: rgba(240,239,53,0.2);
+  padding: 12px 30px;
+  border-radius: 3px;
+}
+
+.tijd{
+  color: rgba(255, 255, 255, 0.4);
+  width: auto;
+  border-bottom: 3px solid white;
+  background: rgba(255,255,255,0.1);
+  display: block;
+  border-radius: 4px;
+  padding: 14px 30px;
+}
+
+.routeD .tijdD{
+  color: rgba(255, 255, 255, 0.4);
+  width: auto;
+  border-bottom: 3px solid white;
+  background: rgba(255,255,255,0.1);
+  display: block;
+  border-radius: 4px;
+  padding: 14px 30px;
+  width: 120px;
+  display: inline-block;
+}
+
+.routeD{
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 275px;
+  text-align: center;
+}
+
+.routeD .tijden{
+  font-size: 1.2em;
+  color: white;
+  display: inline;
+  margin-right: 30px;
+}
+
+.routeD .nr{
+  margin-right: 10px;
+  margin-left: 65px;
+  width: 25px;
+}
+
+.routeD .lijnnr{
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*HALTE VIEW*/
+.halte{
+  position: absolute;
+  top: 240px;
+  width: 375px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.halte-input{
+  margin: 0 0 10px 0;
+  color: white;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  width: 210px;
+  padding: 20px;
+  background: rgba(255,255,255,0.5);
+  border-bottom: 3px solid rgb(240, 239, 53);
+  border-radius: 4px;
+}
+.halte-submit{
+  margin: 0 0 10px 0;
+  color: white;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  width: 250px;
+  padding: 20px;
+  background: rgba(240, 239, 53, 0.2);
+  border-bottom: 3px solid rgb(240, 239, 53);
+  border-radius: 4px;
+}
+ .halte-lijst{
+   position: relative;
+   top: 380px;
+   width: 100%;
+   left: 0;
+   right: 0;
+   margin-left: auto;
+   margin-right: auto;
+   color: white;
+   font-size: 0.8em;
+   font-weight: bold;
+ }
+
+ .halte-kader{
+   position: relative;
+   color: white;
+   margin-bottom: 10px;
+   padding: 15px 10px ;
+ }
+.halte-kader p{
+  display: inline;
+  padding: 5px;
+}
+.halte-nummer{
+  font-weight: bolder;
+  color: rgb(240, 239, 53);
+  float: left;
+  text-align: left;
+}
+.halte-tijd{
+  float: right;
+  text-align: left;
+}
+
+.halte-richting{
+  font-weight: lighter;
+  position: absolute;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.nu{
+  position: absolute;
+  top: 180px;
+  width: 375px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+/*SETTINGS VIEW*/
+
+.settings{
+  height: auto;
+  background: rgba(255, 255, 255, 0.15);
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 4px;
+}
+
+#leadButton{
+  min-height: 50px;
+  width: 100%;
+  padding: 20px 30px;
+  border: none;
+  outline: none;
+  color: white;
+  background: linear-gradient(to bottom,rgba(127,127,127,0.15) ,rgba(127,127,127,0.4) 100%);
+  font-size: 14px;
+  text-transform:uppercase;
+}
+
+#leadButton:hover{
+  background: linear-gradient(to bottom,rgba(127,127,127,0.4) ,rgba(127,127,127,0.55) 100%);
+}
+
+.settings-part{
+  width: 80%;
+}
+
+.settings section{
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.settings-choose{
+  background: none;
+  font-size: 12px;
+  float: left;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid rgb(240, 239, 53);
+  outline: none;
+  color: white;
+  opacity: 80%;
+  text-align: left;
+}
+
+.settings-choose:active{
+  color: rgb(240, 239, 53);
+  border: none;
+  border-bottom: 2px solid rgb(240, 239, 53);
+  outline: none;
+}
+
+.settings-choose::placeholder{
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.settings-save, .settings-login{
+  margin: 20px 0 20px 0;
+  color: white;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  float: right;
+  width: 50%;
+  padding: 10px;
+  margin-right: 0;
+  background: rgba(240, 239, 53, 0.2);
+  border-bottom: 3px solid rgb(240, 239, 53);
+  border-radius: 4px;
+}
+
+.settings-addroute{
+  color: white;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.settings-sub{
+  width: 80%;
+  margin: 20px 10%;
+}
+
+.setting-closed{
+  transition: 0.5s ease;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.setting-open{
+  transition: 0.5s ease;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+span{
+  font-size: 20px;
+}
+
+/*TICKET VIEW*/
+
+.ticket{
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.ticket-achtergrond{
+  width: 300px;
+  background-color: rgba(255,255,255,0.2);
+  margin: auto;
+  border-bottom: 4px solid yellow;
+  border-radius: 3px;
+}
+
+.ticket-info{
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+}
+
+.knoppen{
+  display: flex;
+  justify-content: space-around;
+}
+
+.knop{
+  font-size: 5em;
+  color: white;
+}
+
+.ticket-kosten{
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.ticket-prijs{
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.ticket-btn{
+  background-color: rgba(252,220,4,0.3);
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 3px solid yellow;
+  border-radius: 3px;
+  padding: 15px 32px;
+  margin: 30px 0 40px;
+  display: inline-block;
+}
+
+
+
+
+
+.huidigedag {
+    text-align: center;
+    margin: 0 0 2% 0;
+}
+.huidigedag p{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #575E61;
+}
+.vertrek {
+    position: absolute;
+    font-size:0.85em;
+    text-align: center;
+    margin: auto 10px ;
+}
+
+.vertreknummer {
+    border: solid orange 1px;
+    width: 25px;
+    height: 15px;
+    margin:5px auto;
+    background-color:white;
+    border-radius:10px;
+    border:#FFDD00 solid 2px;
+    padding:1%;
+
+}
+
+
+
+
+
+
+.tijdtype{
+    display: grid;
+    grid-template-columns: 82% 18%;
+    grid-column-gap: 10px;
+}
+
+.lijntype{
+    width: 300px;
+    height: 28px;
+    background-color:white;
+    border-radius:10px;
+    border:#FFDD00 solid 2px;
+    padding:1%;
+}
+.vertrektijd {
+    width: 40px;
+    height: 15px;
+    background-color:white;
+    border-radius:10px;
+    border:#FFDD00 solid 2px;
+    padding:2%;
+    margin-left: 16.5%;
+}
+
+.pError{
+  text-align: center;
+  color: #575E61;
+  font-size: 1.2em;
+  font-weight: 700;
+}

@@ -1,0 +1,40 @@
+<% include header %>
+
+  <h1>Instellingen</h1>
+  <div class="settings">
+    <div class="setting-part">
+      <button class="deselected" id="leadButton" type="button" name="settingBtn">Taal</button>
+      <section class="setting-closed">
+        <div class="settings-sub">
+          <button class="settings-choose" type="button" name="nl">Nederlands</button>
+          <button class="settings-choose" type="button" name="fr">Francais</button>
+          <button class="settings-choose" type="button" name="en">English</button>
+          <button class="settings-save" type="submit">Opslaan</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="setting-part">
+      <button class="deselected" id="leadButton" type="button" name="settingBtn">Actieve Route</button>
+      <section class="setting-closed">
+          <div class="settings-sub">
+            <input class="settings-choose" type="text" name="" value="" placeholder="Info route later aan te vullen">
+            <p class="settings-addroute"><span>+</span> Route toevoegen</p>
+            <button class="settings-save" type="submit">Opslaan</button>
+          </div>
+      </section>
+    </div>
+
+      <div class="setting-part">
+        <button class="deselected" id="leadButton" type="button" name="settingBtn">Mijn Profiel</button>
+        <section class="setting-closed">
+          <div class="settings-sub">
+            <input class="settings-choose" type="email" name="" value="" placeholder="E-mailadres">
+            <input class="settings-choose" type="password" name="" value="" placeholder="Wachtwoord">
+            <button class="settings-login" type="submit">Aanmelden</button>
+          </div>
+        </section>
+      </div>
+  </div>
+
+<% include footer %>
